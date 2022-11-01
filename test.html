@@ -72,53 +72,70 @@
 
         .navbar .nav-link {
           color: #000000 !important;
+
         }
+        .navbar .navbar-toggler {
+          color: #000000
+        }
+
       </style>
 
       <!-- Navbar -->
-      <nav id="main_nav" class="navbar navbar-expand-lg navbar-dark d-none d-md-block fixed-top" style="z-index: 2000;">
+      <nav id="main_nav" class="navbar navbar-expand-lg navbar-dark fixed-top" style="z-index: 2000;
+          background-color: rgba(194,192,192,0.35);">
         <div  class="container-fluid">
           <!-- Navbar brand -->
-          <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-            <strong>SP</strong>
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img
+                    src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                    height="15"
+                    alt="MDB Logo"
+                    loading="lazy"
+            />
           </a>
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                  aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarButtonsExample"
+                  aria-controls="navbarButtonsExample"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+          >
             <i class="fas fa-bars"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navcollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-
-
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
             </ul>
-
-            <ul class="navbar-nav d-flex flex-row">
-              <!-- Icons -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+                <a class="nav-link" href="#">Partners</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item me-3 me-md-1">
-                <a class="nav-link d-sm-flex align-items-sm-center" href="#">
-                  <img
-                          src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-                          class="rounded-circle"
-                          height="22"
-                          alt="Black and White Portrait of a Man"
-                          loading="lazy"
-                  />
-                 <!-- <strong class="d-none d-sm-block ms-1">Name</strong -->
-                </a>
-              </li>
-
             </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-link px-3 me-2" style="link: ">
+                LOGIN
+              </button>
+
+            </div>
           </div>
+          <!-- Collapsible wrapper -->
+            <!-- Left links -->
+          </div>
+
 
         </div>
       </nav>
