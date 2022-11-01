@@ -20,7 +20,7 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
-  <body>
+  <body data-mdb-spy="scroll" data-mdb-target="main_nav">
     <!-- Start your project here-->
     <!--Main Navigation-->
     <header>
@@ -72,7 +72,7 @@
 
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-        <div class="container-fluid">
+        <div id="main_nav" class="container-fluid">
           <!-- Navbar brand -->
           <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
             <strong>MDB</strong>
@@ -83,41 +83,51 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarExample01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#intro">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                   target="_blank">Learn Bootstrap 5</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Download MDB UI KIT</a>
-              </li>
+
+
             </ul>
 
             <ul class="navbar-nav d-flex flex-row">
               <!-- Icons -->
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                   target="_blank">
-                  <i class="fab fa-youtube"></i>
+              <li class="nav-item me-3 me-lg-1">
+                <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+                  <img
+                          src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+                          class="rounded-circle"
+                          height="22"
+                          alt="Black and White Portrait of a Man"
+                          loading="lazy"
+                  />
+                  <strong class="d-none d-sm-block ms-1">Name</strong>
                 </a>
               </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
+              <li class="nav-item dropdown me-3 me-lg-1">
+                <a
+                        class="nav-link dropdown-toggle hidden-arrow"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-mdb-toggle="dropdown"
+                        aria-expanded="false"
+                >
+                  <i class="fas fa-chevron-circle-down fa-lg"></i>
                 </a>
+                <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">About us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">servicios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">log in</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
